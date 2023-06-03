@@ -1,0 +1,14 @@
+{
+  "name": "deco2017_asm3",
+  "version": "1.0.0",
+  "description": "My DECO2017 asm3.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "2017"
+  ],
+  "author": "Kurt Lu",
+  "license": "ISC"
+}

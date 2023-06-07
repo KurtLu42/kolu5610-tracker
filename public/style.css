@@ -78,35 +78,88 @@ html {
       font-size: 15pt;
     }
 
-    #evaluation{
+    textarea{
       text-align: flex-start;
       justify-content: flex-start;
       border-radius: 5px;
       width: 1180px;
-      height: 65px;
-      font-size: 15pt;
+      height: 90px;
+      font-size: 18pt;
     }
 
 
     .add {
       display: flex;
-      justify-content: center; /* 水平居中对齐 */
-      align-items: center; /* 垂直居中对齐 */
+      justify-content: center; 
+      align-items: center; 
       
-  }
-  .add button {
-    border-radius: 5px;
-      width: 200px;
-      height: 65px;
-      font-size: 15pt;
+    }
+    .add button {
+      border-radius: 5px;
+        width: 200px;
+        height: 65px;
+        font-size: 20pt;
+    }
+
+      #button {
+        padding: 10px 20px;
+      }
+  
+  .recording {
+    /*border:1px solid rgb(0,0,0); */
+    grid-area: 3 / 1 / 4 / 4; 
+    position: absolute;
+    margin-top: 60%;
+    width: 100%;
   }
 
-    #button {
-      padding: 10px 20px;
+    #allRecordingTitle{
+      font-size: 50pt;
     }
-  
-  .history {
-    border:1px solid rgb(0,0,0); 
-    grid-area: 3 / 1 / 4 / 4; 
-  }
-  
+
+    #clearAllRecord{
+      border-radius: 5px;
+      width: 200px;
+      height: 40px;
+      font-size: 15pt;
+    }
+
+    #list{
+      width: 1180px;
+      font-size: 20pt;
+      margin-bottom: 100px;
+    }
+
+    .detailButton{
+      border-radius: 5px;
+      width: 150px;
+      height: 40px;
+      font-size: 15pt;
+    }
+
+    .backButton{
+      border-radius: 5px;
+      width: 150px;
+      height: 40px;
+      font-size: 15pt;
+    }
+
+
+.allInformation {
+  display: flex;
+}
+
+.lastTwo{
+  margin-left: 500px;
+}
+.firstTwo{
+  width: 290px;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.firstTwo p{
+  width: 400px;
+  display: flex;
+}

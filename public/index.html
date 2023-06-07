@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
     
+    <!--Create a section named "container" that includes a title, main title, and web description.-->
     <div class="container">
         <div class="Title">
             <h1 id="mainTitle">
@@ -23,10 +23,11 @@
             </p>
         </div>
 
-        <div class="homePage">
-            
-        </div>
+        <!--Create a "homePage" for any background style-->
+        <div class="homePage"></div>
 
+        <!--Create a section named "userInput" that includes fields for "sport name," "location," and "evaluation" 
+            that require user input, as well as a selection field for "sport purpose" that requires user selection.-->
         <div class="userInput">
             <h2 id="userInputTitle">Sports Recording</h2>
             <div class="enterSelect">
@@ -45,24 +46,28 @@
                 <br>
                 <input type="text" id="location" placeholder="Sports Location">
             </div>
+            <br>
+            <br>
 
-            <br>
-            <br>
+            <!--Change the evaluation input box to a box that allows users to press enter to create a new line.-->
             <div class="enterEva">
-                <input type="text" id="evaluation" placeholder="Evaluation: You can record anything about this training, such as duration time, feeling...">
+                <textarea type="text"  id="evaluation" placeholder="Evaluation: You can record anything about this training, such as duration time, feeling...   (Press Enter to create a new line)" cols="15" rows="8"></textarea>
             </div>
-
             <br>
             <br>
             <div class="add">
                 <button id="button">Add</button> 
             </div>
         </div>
-
-        <div class="history">
-            <h3>All Recording</h3>
-
+        
+        <!--Create a section for recording user input, named "Recording". It should include a title, a clear button, and a list.-->
+        <div class="recording">
+            <h3 id="allRecordingTitle">All Recording</h3>
+            <button id="clearAllRecord">Clear All Recording</button>
+            <ul id="list"></ul>
         </div>
       </div>
+
+      <script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/*desktop*/
 html {
     background-color: rgb(155, 164, 181);
 }
@@ -27,7 +28,7 @@ html {
 #webDescription {
     font-size: 20pt;
 }
-  
+ 
   .homePage { 
     /* border:1px solid rgb(255, 0, 0); */
     grid-area: 1 / 1 / 2 / 4;
@@ -69,6 +70,10 @@ html {
       width: 200px;
       margin-bottom: 10px;
     }
+
+    #selection1{
+      color: gray;
+    } 
 
     #location {
       text-align: flex-start;
@@ -162,4 +167,235 @@ html {
 .firstTwo p{
   width: 400px;
   display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Phone*/
+@media (max-width: 800px) {
+  
+
+.container {  
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width:auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+}
+
+.Title { 
+  /* border:1px solid rgb(0,0,0); */
+  grid-area: 1 / 1 / 2 / 4; 
+  z-index: 2;
+}
+#mainTitle {
+  font-size: 25pt;
+}
+#webDescription {
+  font-size: 12pt;
+}
+
+.homePage { 
+  /* border:1px solid rgb(255, 0, 0); */
+  grid-area: 1 / 1 / 2 / 4;
+  background-image: url("run.png");
+  border-radius: 0%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center right;
+  z-index: 1;
+}
+
+.userInput { 
+  /*border:1px solid rgb(0,0,0); */
+  grid-area: 2 / 1 / 5 / 4; 
+}
+#userInputTitle{
+  font-size: 20pt;
+}
+  
+  #sportsName {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 450px;
+    height: 50px;
+    font-size: 12pt;
+  }
+
+  #sportPurpose{
+    margin-bottom: 20px;
+    float: left;
+    width: 456px;
+    height: 55px;
+    font-size: 12pt;
+    border-radius: 5px;
+  }
+
+  select{
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  #selection1{
+    color: gray;
+   } 
+
+  #location {
+    margin-bottom: -20px;
+    text-align: flex-start;
+    border-radius: 5px;
+    width: 450px;
+    height: 50px;
+    font-size: 12pt;
+  }
+
+  textarea{
+    text-align: flex-start;
+    justify-content: flex-start;
+    border-radius: 5px;
+    width: 450px;
+    height: 150px;
+    font-size: 12pt;
+  }
+
+
+  .add {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+  }
+  .add button {
+    border-radius: 5px;
+      width: 100px;
+      height: 45px;
+      font-size: 12pt;
+  }
+
+    #button {
+      padding: 10px 20px;
+    }
+
+.recording {
+  /*border:1px solid rgb(0,0,0); */
+  grid-area: 3 / 1 / 4 / 4; 
+  position: absolute;
+  margin-top: 180%;
+  width: 88%;
+}
+
+  #allRecordingTitle{
+    font-size: 20pt;
+  }
+
+  #clearAllRecord{
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    font-size: 10pt;
+  }
+
+  #list{
+    width: 300px;
+    font-size: 12pt;
+    margin-bottom: 100px;
+  }
+
+  .detailButton{
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    font-size: 10pt;
+  }
+
+  .backButton{
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    font-size: 10pt;
+  }
+
+
+.allInformation {
+  display:contents;
+}
+
+.lastTwo{
+margin-left: 0px;
+}
+
+.firstTwo{
+width: 290px;
+flex-wrap: nowrap;
+display: flex;
+flex-direction: column;
+
+}
+
+.firstTwo p{
+width: 400px;
+display: flex;
+}
+
+
+.lastTwo{
+  width: 400px;
+  overflow-wrap: break-word;
+}
 }
